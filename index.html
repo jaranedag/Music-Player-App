@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/87e96fc2b4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div id="container">
+            <img id="appImage" src="img/cover-1.png" alt="">
+            <h1 id="songTitle">Lost in the City Lights</h1>
+            <h2>Cosmo Sheldrake</h2>
+            <div class="progress-bar"></div>
+            <audio id="audio" >
+                <source src="img/lost-in-city-lights.mp3" type="audio/mp3">
+            </audio>
+            <div id="time-audio"><span id="current-time">0:00</span> <span id="total-time">0:00</span></div>
+            
+            <input type="range" value="0" id="progress">
+            <div id="container-button">
+                <button onclick="previousSong()"><i class="fa-solid fa-backward-step"></i></button>
+                <div onClick="playPause()" ><button id="playButton"><i class="fa-solid fa-play" id="ctrlIcon"></i></button></div>
+                <button onclick="nextSong()"><i class="fa-solid fa-forward-step"></i></button>
+                
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
